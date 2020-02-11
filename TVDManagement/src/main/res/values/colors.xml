@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7b1fa2</color>
+    <color name="colorPrimaryDark">#4a0072</color>
+    <color name="colorAccent">#ae52d4</color>
+    <color name="colorPrimaryLight">#e57373</color>
+    <color name="theme_color">#4FC3F7</color>
+    <color name="transparent">#fafafa</color>
+    <color name="white">#F5F5F5</color>
+    <color name="yellow">#FFC000</color>
+    <color name="tab_color">#eac73c</color>
+    <color name="light_yellow">#FEC212</color>
+    <color name="black">#000000</color>
+    <color name="color_section">#4CAF50</color>
+    <color name="color_author">#8E24AA</color>
+    <color name="light_black">#885d5d5e</color>
+    <color name="light_gray">#BDBDBD</color>
+    <color name="color_trail_text">#102027</color>
+    <color name="color_date_text">#a4a4a4</color>
+    <color name="light_pink">#ef9a9a</color>
+    <color name ="light_violet">#B2EBF2</color>
+    <color name="yellow2">#FFEE58</color>
+    <color name="transparent_white">#80FFFFFF</color>
+    <color name="background_color">#E0E0E0</color>
+    <color name="deep_blue">#03A9F4</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="samaya_logo_colour">#CC0000</color>
+    <color name="sliding_img_background_color">#CFD8DC</color>
+    <color name="like_icon_activated">#FF5252</color>
+    <color name="icons_counter_color">#828181</color>
+    <color name="circle_image_shadow">#8b8b8b</color>
+    <color name="send_comment_button_activated">#0097d3</color>
+    <color name="send_comment_button_deactivated">#7fcbe9</color>
+    <color name="red">#D00000</color>
+    <color name="fieryRose">#FF5964</color>
+    <color name="lawnGreen">#89FC00</color>
+    <color name="indigo">#652A84</color>
+    <color name="warningColor">#FFA500</color>
+    <color name="successColor">#a4c639</color>
+    <color name="errorColor">#CC0000</color>
+    <color name="textGray">#969393</color>
+</resources>

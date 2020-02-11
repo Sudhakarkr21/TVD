@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TVD MANAGEMENT</string>
+
+    <string name="request_equipment">Request Equipment</string>
+    <string name="management_approval">Management Approval</string>
+    <string name="received_approval">Received Approval</string>
+    <string name="view_approvals">View Approvals</string>
+    <string name="attendance">Attendance</string>
+    <string name="attendance_rep">Attendance Report</string>
+    <string name="hardware_complaint">Hardware Complaint</string>
+    <string name="view_complaint">View Complaint</string>
+
+    <string name="employee_id">Employee ID</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="enter_employee_id">Enter Employee ID</string>
+    <string name="enter_location">Your Location</string>
+    <string name="remarks">Remarks</string>
+    <string name="remark_desc">Enter Remarks</string>
+    <string name="submit">Submit</string>
+    <string-array name="hardware_type">
+        <item>SELECT</item>
+        <item>Printer</item>
+        <item>computer</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+    <string name="semi_colon">:</string>
+    <string name="logout">Logout</string>
+    <string name="company_details">© 2019 Transvision Software &amp; Data Solutions Pvt Ltd.\n
+        All Rights Reserved\n<u>www.transvisionsolutions.com</u></string>
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+//            key alias - key
+//            password - tvd12345
+//            desktop - tvd_management.jks
+        }
+        lintOptions {
+            checkReleaseBuilds false
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.example.tvd"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.1.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def formattedDate = new Date().format('ddMMMyyyy_HHmm')
+                    def newName = output.outputFile.name
+                    newName = newName.replace("-release", "_" + versionName + "_" + formattedDate)
+                    outputFileName = newName
+                }
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    // GSON with Retrofit
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-location:12.0.1'
+    implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    //noinspection UseOfBundledGooglePlayServices
+    implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation files('libs\\common-lang3.jar')
+    implementation files('libs\\commons-io-2.4.jar')
+    implementation files('libs\\commons-net-20030211.160026.jar')
+    implementation files('libs\\org-apache-commons-codec.jar')
+    implementation "com.wang.avi:library:2.1.3"
+    implementation 'com.google.android.material:material:1.0.0'
+
+}
